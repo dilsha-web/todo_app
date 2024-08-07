@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    
+  }  
+
+.todo{
+background-color: rgb(180, 205, 116);
+  width: 100%;
+  max-width: 800px; /* Optional: limit the maximum width */
+  height: auto;
+  padding: 2rem;
+  margin-top: 2rem; /* Margin from the top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+.todo-header{
+    font-size: 40px;
+    margin: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.todo-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.todo-content input{
+    width:20rem;
+    height: 2rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+   
+}
+
+.todo-content input:focus{
+    outline: 1px solid rgb(224, 220, 25);
+}
+.todo-content input::placeholder{
+    text-align: left;
+    font-weight: 500;
+    
+   
+}
+
+
+.todo-content button{
+    margin-top: 1rem;
+    width: 6rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+}
+.todo-content button:hover{
+    background-color: rgb(222, 234, 83);
+    color: black;
+}
+.todo-list{
+    margin: 2rem 6rem;
+    font-size: 1rem;
+    text-align: left;
+
+}
+
+.todo-list li{
+    list-style: disc;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    height: 2rem;
+   
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+.todo-delete, .todo-edit{
+    float: right;
+    width: 4rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+    margin: 0 .5rem;
+}
